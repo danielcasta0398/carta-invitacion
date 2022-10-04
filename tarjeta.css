@@ -1,0 +1,668 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+hr {
+  margin-top: 5px;
+}
+
+/* tipo de display flexible */
+.flex {
+  display: flex;
+}
+
+/* contenedor donde va la tarjeta y el fondo */
+.contenedor-tarjeta {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("imagenes/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* caja donde va la tarjeta y sobre */
+.book {
+  position: relative;
+  display: flex;
+  width: 43.9%;
+  height: 80.5%;
+  transition: transform 8s;
+  -webkit-transition: transform 8s;
+  -moz-transition: transform 8s;
+}
+
+/* espacio para la tarjeta y sobre */
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  perspective: 1500px;
+  -webkit-perspective: 1500px;
+}
+
+/* tarjeta de invitacion */
+.tarjet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(imagenes/Tarjeta.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px rgba(27, 27, 27, 0.749);
+}
+
+/* tapa izquierda del sobre */
+.front1 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transform-origin: left;
+  transition: transform 7.9s;
+  -webkit-transform-origin: left;
+  -webkit-transition: transform 7.9s;
+  -ms-transition: transform 7.9s;
+  -o-transition: transform 7.9s;
+  -moz-transition: transform 7.9s;
+}
+/* Contenedor donde esta la cara izquierda de la iglesia
+ */.front1-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/left.jpg);
+  background-size: cover;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* capa trasera de la tapa izquierda  */
+.back1 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transform-origin: left;
+  transition: transform 8s;
+  -webkit-transform-origin: left;
+  -webkit-transition: transform 8s;
+}
+
+/* Contenedor donde esta la textura trasera de la la tapa izquierda */
+.back1-content {
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/back.jpg);
+  background-size: cover;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* tapa derecha del sobre */
+.front2 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform-origin: right;
+  transition: transform 7.9s;
+  -webkit-transform-origin: right;
+  -webkit-transition: transform 7.9s;
+  -ms-transition: transform 7.9s;
+  -o-transition: transform 7.9s;
+  -moz-transition: transform 7.9s;
+}
+/* contenedor donde va el lado derecho de la iglesia */
+.front2-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/right.jpg);
+  background-size: cover;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* capa trasera de la capa derecha */
+.back2 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform-origin: right;
+  transition: transform 8s;
+  -webkit-transform-origin: right;
+  -webkit-transition: transform 8s;
+}
+.back2-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/back.jpg);
+  background-size: cover;
+  border-radius: 0px 5px 5px 0px;
+}
+/* Se oculta la imagen de la tapa izquierda */
+.front1 {
+  z-index: 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.back1 {
+  z-index: 0;
+}
+/* Se oculta la imagen de la tapa derecha */
+.front2 {
+  z-index: 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.back2 {
+  z-index: 0;
+}
+
+#tar {
+  z-index: 1;
+}
+#p1 {
+  z-index: 2;
+}
+#p2 {
+  z-index: 2;
+}
+
+#book {
+  z-index: 3;
+}
+
+/* se realiza la animacion de totacion de la tapa izquierda*/
+.flipped .front1,
+.flipped .back1 {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+}
+
+/* se realiza la animacion de rotacion de la tapa derecha */
+.flipped .front2,
+.flipped .back2 {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/* estilo contenedor donde va el boton de abrir sobre */
+.btnBox {
+  position: relative;
+  display: flex;
+  top: 25px;
+  width: 250px;
+  height: 65px;
+}
+/* estilo tamaño de contenedor donde va el boton de abrir invitacion */
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* estilo de boton abrir sobre */
+.btn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-color: #025980;
+  color: white;
+  border: 0.2px solid white;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 10px rgba(27, 27, 27, 0.749);
+  top: 0px;
+  z-index: 5;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: rgb(81, 142, 233);
+  color: aliceblue;
+}
+.btn2{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-color: #668f63;
+  color: white;
+  border: 0.2px solid rgb(255, 230, 2);
+  border-radius: 5px;
+  align-items: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 10px rgba(27, 27, 27, 0.749);
+  top: 0px;
+  z-index: 5;
+}
+.btn2:focus {
+  outline: none;
+}
+.btn2:hover {
+  background-color: #025980;
+  color: aliceblue;
+}
+
+.information {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 6px;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  padding-bottom: 60px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: -5px 5px 25px rgba(27, 27, 27, 0.749);
+}
+
+.information > h1 {
+  margin-bottom: 10px;
+}
+.firm {
+  text-align: end;
+  align-items: flex-end;
+  color: rgba(87, 87, 87, 0.23);
+}
+.titulo {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.item {
+  border-radius: 5px;
+  padding-top: 2px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+.items {
+  margin-top: 0px;
+}
+
+.botones {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
+.botones:hover {
+  background: #025980;
+  color: white;
+  cursor: pointer;
+}
+
+.desplegar {
+  margin-top: 5px;
+}
+
+.info {
+  text-align: center;
+  font-weight: 300;
+}
+.info2 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.info3 {
+  text-align: center;
+  font-weight: 300;
+}
+.info4 {
+  text-align: center;
+  font-weight: 300;
+}
+.info5 {
+  text-align: center;
+  font-weight: 300;
+}
+.info-mapa {
+  text-align: center;
+  text-decoration: none;
+  color: #025980;
+  margin: 5px auto;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.desaparece {
+  display: none;
+}
+.desaparece2 {
+  display: none;
+}
+.desaparece3 {
+  display: none;
+}
+.desaparece4 {
+  display: none;
+}
+.desaparece5 {
+  display: none;
+}
+.alineamiento {
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.alineamiento2 {
+  text-align: center;
+  color: rgb(0, 132, 51);
+}
+.descrip {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .contenedor-tarjeta {
+    flex: 5;
+  }
+  .information {
+    flex: 2;
+  }
+  .tarjeta {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .contenedor-tarjeta {
+    flex: 5;
+  }
+  .information {
+    flex: 2;
+  }
+  .tarjeta {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-height: 45vh;
+  }
+  .book {
+    width: 65vh;
+    height: 680px;
+  }
+
+  .information {
+    flex: 1;
+    align-items: center;
+  }
+  .items {
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-width: auto;
+    min-height: 100vh;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  .book {
+    width: 60.5vh;
+    height: 69vh;
+    margin-top: -30%;
+  }
+  .information {
+    overflow-x: hidden;
+    flex: 4;
+    align-items: center;
+    margin-top: -20%;
+  }
+  .items {
+    width: 300px;
+  }
+  .btnBox {
+    top: 30px;
+    width: 150px;
+    height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    display: none;
+  }
+  .btn2{
+    display: flex;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-width: auto;
+    min-height: 100vh;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+  }
+  .book {
+    width: 43.5vh;
+    height: 50vh;
+    margin-top: -30%;
+  }
+  .information {
+    overflow-x: hidden;
+    flex: 4;
+    align-items: center;
+    margin-top: -30%;
+  }
+  .items {
+    width: 300px;
+  }
+  .btnBox {
+    top: 60px;
+    width: 150px;
+    height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    display: none;
+
+  }
+  .btn2{
+    display: flex;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-width: auto;
+    min-height: 100vh;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+  }
+  .book {
+    width: 52.5vh;
+    height: 60vh;
+    margin-top: -30%;
+  }
+  .information {
+    overflow-x: hidden;
+    flex: 4;
+    align-items: center;
+    margin-top: -20%;
+  }
+  .items {
+    width: 300px;
+  }
+  .btnBox {
+    top: 50px;
+    width: 150px;
+    height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    display: none;
+
+  }
+  .btn2{
+    display: flex;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-width: auto;
+    min-height: 100vh;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+  }
+  .book {
+    width: 52.5vh;
+    height: 60vh;
+    margin-top: -30%;
+  }
+  .information {
+    overflow-x: hidden;
+    flex: 4;
+    align-items: center;
+    margin-top: -20%;
+  }
+  .items {
+    width: 300px;
+  }
+  .btnBox {
+    top: 45px;
+    width: 150px;
+    height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    display: none;
+
+  }
+  .btn2{
+    font-size: 15px;
+    display: flex;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .contenedor-tarjeta {
+    flex: 1;
+    min-width: auto;
+    min-height: 100vh;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+  }
+  .book {
+    width: 45.5vh;
+    height: 52vh;
+    margin-top: -30%;
+  }
+  .information {
+    overflow-x: hidden;
+    flex: 4;
+    align-items: center;
+    margin-top: -20%;
+  }
+  .items {
+    width: 300px;
+  }
+  .btnBox {
+    top: 60px;
+    width: 150px;
+    height: 60px;
+  }
+  .btn {
+    font-size: 15px;
+    display: none;
+
+  }
+  .btn2{
+    display: block;
+    font-size: 15px;
+  }
+}

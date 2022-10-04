@@ -1,0 +1,72 @@
+Uri: https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@100;300;500;700&display=swap
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/eduvicwantbeginner/v1/jiz2RF1BuW9OwcnNPxLl4KfZCHd9nFtd5Tu7stCpElYpvPfZZ-OXlPmF.ttf
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\s\eduvicwantbeginner\v1\jiz2RF1BuW9OwcnNPxLl4KfZCHd9nFtd5Tu7stCpElYpvPfZZ-OXlPmF.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\s\roboto\v30\KFOkCnqEu92Fr1MmgWxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\s\roboto\v30\KFOlCnqEu92Fr1MmEU9vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\s\roboto\v30\KFOlCnqEu92Fr1MmSU5vAw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\s\roboto\v30\KFOlCnqEu92Fr1MmWUlvAw.ttf
+Content Type: font/ttf
+
+Uri: https://marlen-y-carlos.vercel.app/
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\index.htm
+Content Type: text/html
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/back.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\back.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/flecha.gif
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\flecha.gif
+Content Type: image/gif
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/fondo.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\fondo.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/fondo3.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\fondo3.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/left.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\left.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/logo.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\logo.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/right.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\right.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/imagenes/Tarjeta.jpg
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\imagenes\Tarjeta.jpg
+Content Type: image/jpeg
+
+Uri: https://marlen-y-carlos.vercel.app/main.js
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\main.js
+Content Type: application/javascript
+
+Uri: https://marlen-y-carlos.vercel.app/normalize.css
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\normalize.css
+Content Type: text/css
+
+Uri: https://marlen-y-carlos.vercel.app/tarjeta.css
+File Name: C:\Downloaded Web Sites\marlen-y-carlos.vercel.app\tarjeta.css
+Content Type: text/css
+
